@@ -4566,11 +4566,22 @@ Sign In/Sign Up Pop up
   border-top: none;
   border-radius: 0 0 5px 5px;
 }
+.apartments-content .text-content .bottom-content .meta-garage-room .garage{
+ 
+  color: #9d9d9d;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+
+}
 .apartments-content .text-content .bottom-content > div {
   display: inline-block;
 }
 .apartments-content .text-content .bottom-content > div i {
   margin-right: 5px;
+}
+.apartments-content .text-content .bottom-content > div img {
+  margin-left: 20px;
 }
 .apartments-content .text-content .bottom-content .meta-bed-room {
   margin-right: 30px;
