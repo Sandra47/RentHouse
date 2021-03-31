@@ -3464,13 +3464,12 @@ Sign In/Sign Up Pop up
   color: rgb(233, 177, 23);
   text-shadow:#ffffff;
   font-size: 90px;
-  margin-tottom: 30px;
+  margin-bottom: 30px;
   position: relative;
   margin-bottom: 45px;
   font-weight: bold;
   line-height: 1.1em;
-}op: 0;
-  margin-b
+}
 @media screen and (max-width: 1200px) {
   .slider-text-content h2 {
     font-size: 75px;
