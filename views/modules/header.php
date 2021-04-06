@@ -4,7 +4,7 @@
                     <div class="col-md-7 col-sm-7 mobile-center">
                         <div class="site-logo">
                             <a href="index.html">
-                                <img src="views/assets/images/logo/casas (1).png" alt="site-logo" />
+                                <img src="/views/assets/images/logo/casas (1).png" alt="site-logo" />
                             </a>
                         </div><!-- /.site-logo -->
                     </div><!-- /.col-md-8 -->

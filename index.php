@@ -101,7 +101,7 @@
 
     <!-- ====== Header Top Area ====== -->
     <header class="header-area bg-nero hidden-xs hidden-sm">
-       <?php include 'views/modules/menu.php'?>
+       <?php include 'views/modules/header.php'?>
     </header><!-- /.head-area -->
 
     <!-- ====== Header Bottom Content ====== -->
