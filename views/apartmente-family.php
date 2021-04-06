@@ -94,38 +94,7 @@
 
    <!-- ====== Header Top Area ====== -->
    <header class="header-area bg-nero hidden-xs hidden-sm">
-        <div class="container">
-            <div class="header-top-content">
-                <div class="row">
-                    <div class="col-md-7 col-sm-7 mobile-center">
-                        <div class="site-logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo/casas (1).png" alt="site-logo" />
-                            </a>
-                        </div><!-- /.site-logo -->
-                    </div><!-- /.col-md-8 -->
-                    <div class="col-md-5 col-sm-5 mobile-center">
-                        <div class="left-content">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa fa-phone-square"></i>Reservas (+57) 300-2323232</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="cd-signin"><i class="fa fa-address-book"></i>Ingresar /
-                                        Registro</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="main-search"><i class="fa fa-search"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="trigger-overlay"><i class="fa fa-bars"></i></a>
-                                </li>
-                            </ul>
-                        </div><!-- /.left-content -->
-                    </div><!-- /.col-md-4 -->
-                </div><!-- /.row -->
-            </div><!-- /.header-top-content -->
-        </div><!-- /.container -->
+       <?php include 'modules/menu.php'?>
     </header><!-- /.head-area -->
 
 <!-- ====== Header Bottom Content ====== -->
@@ -510,41 +479,7 @@
     			<div class="col-md-4">
                     <div class="apartment-sidebar">                    
         				<div class="widget_rental_search clerafix">					
-        					<div class="form-border gradient-border">
-        						<form action="booking.html" method="get" class="advance_search_query booking-form">
-        							<div class="form-bg seven">
-        								<div class="form-content">
-                                            <h2 class="form-title">Quieres reservar este Apartamento</h2>
-        									<div class="form-group">
-        									   <label>Nombre Completo</label>
-        									   <input type="fullName" name="fullName" placeholder="Nombre Completo">
-        									</div><!-- /.form-group -->
-        									<div class="form-group">
-                            					<label>Correo Electronico</label>
-                                                <input type="email" name="email" placeholder="example@domain.com">
-        									</div><!-- /.form-group -->
-        									<div class="form-group">
-        										<label>Contraseña</label>
-        										<input type="password" name="password" placeholder="Contraseña">
-        									</div><!-- /.form-group -->
-        									<div class="form-group">
-        									    <label>ciudad</label>
-                                                <input type="city" name="city" placeholder="Ciudad">
-        									</div><!-- /.form-group -->
-                                           
-        									<div class="form-group">
-                                                <p class="fieldset">
-                                                    <input type="checkbox" name="dpr"id="accept-terms">
-                                                    <label for="accept-terms">Aceptas los<a href="#0">Terminos</a> y condiciones</label>
-                                                </p>
-        									</div><!-- /.form-group -->
-        									<div class="form-group">
-        										<button type="submit" class="button default-template-gradient button-radius">Aceptar</button>
-        									</div><!-- /.form-group -->
-        								</div><!-- /.form-content -->
-        							</div><!-- /.form-bg -->
-        						</form> <!-- /.advance_search_query -->
-        					</div><!-- /.form-border -->
+                          <?php include 'modules/formulario.php'?>
         				</div><!-- /.widget_rental_search -->
 
         				<div class="apartments-content seven post clerafix">
