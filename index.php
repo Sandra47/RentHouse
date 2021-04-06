@@ -101,7 +101,7 @@
 
     <!-- ====== Header Top Area ====== -->
     <header class="header-area bg-nero hidden-xs hidden-sm">
-        <?php include '/opt/lampp/htdocs/RentHouse/modules/menu.php'?>
+        <?php include './modules/menu.php'?>
     </header><!-- /.head-area -->
 
     <!-- ====== Header Bottom Content ====== -->
