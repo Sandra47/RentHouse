@@ -20,8 +20,8 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="assets/images/house-logo.png">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="views/assets/images/house-logo.png">
+    <link rel="apple-touch-icon" href="views/assets/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
@@ -33,9 +33,9 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <link rel="stylesheet" href="assets/css/colors.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="views/assets/css/plugins.css">
+    <link rel="stylesheet" href="views/assets/css/colors.css">
+    <link rel="stylesheet" href="views/style.css">
     <!-- Modernizr
     ================================================== -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -83,7 +83,7 @@
                         <div class="logo-area tb-cell">
                             <div class="site-logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo/casas (1).png" alt="site-logo" />
+                                    <img src="views/assets/images/logo/casas (1).png" alt="site-logo" />
                                 </a>
                             </div><!-- /.site-logo -->
                         </div><!-- /.logo-area -->

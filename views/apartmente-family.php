@@ -449,16 +449,15 @@
     							<li><span>Valor de la Renta:</span> $220.000.000(negociable)</li>
     							<li><span>Servio de internet:</span> 8,000 </li>
                                 <li><span>Servios Adicionales:</span> TV Cable, Telefono, wiffi </li>
-    							<li><span>Deposito de Seguridad:</span> 3 noches de rentas</li>
-    							<li><span>Politica:</span> 3 meses antes de la notificación requerida</li>
+    							
     						</ul>
     					</div><!-- /.price -->
 
     					<div class="property-details">
     						<h3>Detalles de la propiedad</h3>
     						<ul>
-    							<li><span>Dirrecion  &amp; Area :</span> Barrio la Victoria Kr 69B</li>
-    							<li><span>Descripcion :</span> cuartos grandes y aires condioales piso de madera, patio grande y pisina</li>
+    							<li><span>Dirrecion:</span> Barrio la Victoria Kr 69B</li>
+    							<li><span>Descripcion:</span> cuartos grandes y aires condioales piso de madera, patio grande y pisina</li>
     							<li><span>Numero de cuarto:</span> 4 </li>
                                 <li><span>Numero de baño:</span> 3 </li>
                                 <li><span>Parqueadero:</span> Para 3 Utomovil</li>
