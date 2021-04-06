@@ -33,9 +33,9 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <link rel="stylesheet" href="assets/css/colors.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./views/assets/css/plugins.css">
+    <link rel="stylesheet" href="./views/assets/css/colors.css">
+    <link rel="stylesheet" href='./views/style.css'>
     <!-- Modernizr
     ================================================== -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -101,7 +101,7 @@
 
     <!-- ====== Header Top Area ====== -->
     <header class="header-area bg-nero hidden-xs hidden-sm">
-       <?php include 'views/modules/menu.php'?>
+        <?php include './modules/menu.php'?>
     </header><!-- /.head-area -->
 
     <!-- ====== Header Bottom Content ====== -->
@@ -796,7 +796,7 @@
 
                             <div class="text-content">
                                 <div class="top-content">
-                                    <h3><a href="apartment-partner.html">Apartamento Pareja</a></h3>
+                                    <h3><a href="apartment-single.html">Apartamentos Familiares</a></h3>
                                     <span>
                                         <i class="fa fa-map-marker"></i>
                                         pererira, centro
