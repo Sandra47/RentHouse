@@ -6,7 +6,7 @@
 
         protected static function views_model($views){
             
-            $whiteList=["homepage","single-apartment","register-house"];
+            $whiteList=["homepage","apartmente-family","register-house","apartment-partner"];
 
             if(in_array($views,$whiteList)){
                 
@@ -17,9 +17,9 @@
                 }
 
 
-            }elseif($views == "index" || $views == "home"){
+            }elseif($views == "index" || $views == "homepage"){
                 
-                $content = "home";
+                $content = "homepage";
 
             }else{
                 

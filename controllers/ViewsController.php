@@ -26,7 +26,7 @@
                 $response=ViewsController::views_model($route['0']);
             
             }else{
-                $response = "home";
+                $response = "homepage";
             }
 
             return $response;

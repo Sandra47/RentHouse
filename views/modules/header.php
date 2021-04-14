@@ -38,8 +38,8 @@
                     </div><!-- /.menu-area -->
                     <div class="logo-area tb-cell">
                         <div class="site-logo">
-                            <a href="index.html">
-                                <img src="assets/images/logo/casas (1).png" alt="site-logo" />
+                            <a href="template.php">
+                                <img src="views/assets/images/logo/casas (1).png" alt="site-logo" />
                             </a>
                         </div><!-- /.site-logo -->
                     </div><!-- /.logo-area -->
@@ -57,7 +57,38 @@
 
 <!-- ====== Header Top Area ====== -->
 <header class="header-area bg-nero hidden-xs hidden-sm">
-    <?php include 'views/modules/menu.php'?>
+    <div class="container">
+        <div class="header-top-content">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 mobile-center">
+                    <div class="site-logo">
+                        <a href="template.php">
+                            <img src="views/assets/images/logo/casas (1).png" alt="site-logo" />
+                        </a>
+                    </div><!-- /.site-logo -->
+                </div><!-- /.col-md-8 -->
+                <div class="col-md-5 col-sm-5 mobile-center">
+                    <div class="left-content">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-phone-square"></i>Reservas (+57) 300-2323232</a>
+                            </li>
+                            <li>
+                                <a href="#" class="cd-signin"><i class="fa fa-address-book"></i>Ingresar /
+                                        Registro</a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-search"><i class="fa fa-search"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="trigger-overlay"><i class="fa fa-bars"></i></a>
+                            </li>
+                        </ul>
+                    </div><!-- /.left-content -->
+                </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+        </div><!-- /.header-top-content -->
+    </div><!-- /.container -->
 </header><!-- /.head-area -->
 
 <!-- ====== Header Bottom Content ====== -->
@@ -70,7 +101,7 @@
                         <div class="menu-content">
                             <ul class="menu-list">
                                 <li>
-                                    <a href="#">Inicio</a>
+                                    <a href="homepage">Inicio</a>
                                     <!-- <ul class="sub-menu">
                                             <li>
                                                 <a href="index.html">Home Layout </a>
@@ -84,10 +115,10 @@
                                     <a href="#">Inmuebles</a>
                                     <ul class="sub-menu">
                                         <li>
-                                            <a href="apartmente-family.html">Casas</a>
+                                            <a href="apartmente-family">Casas</a>
                                         </li>
                                         <li>
-                                            <a href="apartment-single.html">Apartamentos</a>
+                                            <a href="apartment-partner">Apartamentos</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -115,15 +146,9 @@
                     </div> <!-- /.menu-wrapper -->
                 </nav><!-- /.site-navigation -->
             </div><!-- /.col-md-10 -->
-
-            <!-- <div class="col-md-2 col-sm-2">
-                    <div class="booking">
-                        <span><a href="booking.html">Booking</a></span>
-                    </div><!-- /.Booking -->
-        </div><!-- /.col-md-2 -->
-    </div><!-- /.row -->
+       </div><!-- /.row -->
     </div><!-- /.container -->
-    <!-- </header>/.header-bottom-content -->
+</header><!--/.header-bottom-content -->
 
     <!-- ====== Header Overlay Content ====== -->
     <div class="header-overlay-content">
@@ -132,15 +157,10 @@
             <button type="button" class="overlay-close">Cerrar</button>
             <nav>
                 <ul class="overlay-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Sobre Nosotros</a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="#">Sobre Nosotros</a></li>
-                            <li><a href="#">...</a></li>
-                        </ul>
-                    </li>
-
+                    <li><a href="homepage">Inicio</a></li>
+                    <li> <a href="apartmente-family">Casas</a> </li>
+                    <li> <a href="apartment-single">Apartamentos</a></li>
+                </ul>
             </nav>
         </div> <!-- /.overlay-menu-item -->
 

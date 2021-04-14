@@ -226,7 +226,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6">
                 <div class="apartments-content">
                     <div class="image-content">
-                        <a href="apartment-single.html"><img src="assets/images/apartment/apartamentos1.png"
+                        <a href="apartment-single.html"><img src="views/assets/images/apartment/apartamentos1.png"
                                 alt="apartment" /></a>
                     </div><!-- /.image-content -->
 
@@ -282,7 +282,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6">
                 <div class="apartments-content">
                     <div class="image-content">
-                        <a href="apartment-single.html"><img src="assets/images/gallery/about-image.jpg"
+                        <a href="apartment-single.html"><img src="views/assets/images/gallery/about-image.jpg"
                                 alt="apartment" /></a>
                     </div><!-- /.image-content -->
 
@@ -339,7 +339,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6">
                 <div class="apartments-content">
                     <div class="image-content">
-                        <a href="apartment-single.html"><img src="assets/images/apartment/apartamento2.jpeg"
+                        <a href="apartment-single.html"><img src="views/assets/images/apartment/apartamento2.jpeg"
                                 alt="apartment" /></a>
                     </div><!-- /.image-content -->
 
@@ -397,7 +397,7 @@
                 <div class="apartments-content">
                     <div class="image-content">
                         <a href="apartment-single.html"><img
-                                src="assets/images/apartment/apartamentointerior.jpeg" alt="apartment" /></a>
+                                src="views/assets/images/apartment/apartamentointerior.jpeg" alt="apartment" /></a>
                     </div><!-- /.image-content -->
 
                     <div class="text-content">
@@ -454,7 +454,7 @@
                 <div class="apartments-content">
                     <div class="image-content">
                         <a href="apartment-single.html"><img
-                                src="assets/images/apartment/apartamentointerior1.jpeg" alt="apartment" /></a>
+                                src="views/assets/images/apartment/apartamentointerior1.jpeg" alt="apartment" /></a>
                     </div><!-- /.image-content -->
 
                     <div class="text-content">
@@ -509,7 +509,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6">
                 <div class="apartments-content">
                     <div class="image-content">
-                        <a href="apartment-single.html"><img src="assets/images/apartment/apartamento3.jpeg"
+                        <a href="apartment-single.html"><img src="views/assets/images/apartment/apartamento3.jpeg"
                                 alt="apartment" /></a>
                     </div><!-- /.image-content -->
 

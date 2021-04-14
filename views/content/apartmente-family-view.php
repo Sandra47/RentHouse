@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">                
-                    <h2 class="page-title">House</h2>
-                    <p class="page-description">More Details About Apartment</p>        
+                    <h2 class="page-title">Casa</h2>
+                    <p class="page-description">Mas Detalles sobre la Casa</p>        
                 </div><!-- /.col-md-12 -->
             </div><!-- /.row-->
         </div><!-- /.container-fluid -->           
@@ -19,7 +19,7 @@
                        <span class="first-item">
                         <a href="index01.html">Home</a></span>
                        <span class="separator">&gt;</span>
-                       <span class="last-item">Apartment Single Page</span>
+                       <span class="last-item">Casa</span>
                    </div>
                </div><!-- /.col-md-12 -->
            </div><!-- /.row -->
@@ -106,18 +106,13 @@
                             <p class="pull-right rent">Valor de la Renta: $2.000.000</p>
                         </div><!-- /.tb-cell -->
                     </div><!-- /.tb -->
-                    <div class="clearfix"></div><!-- /.clearfix -->
-                    <p class="apartment-description default-gradient-before">
-                        Casa en conjunto cerrado, ubicada en el norte de la ciudad sobre la Avenida 19, consta de dos niveles, en el primer nivel cuenta con sala comedor, baño social, cocina, habitación con baño y ducha y patio de ropas. El segundo nivel consta de habitación principal con baño, vestier y balcón, sala de televisión, dos habitaciones y un baño. La vivienda dispone de un parqueadero y en las áreas sociales del conjunto cuenta con: piscina, jacuzzi, salón social, área de juegos para niños, gimnasio, portería y vigilancia las 24 horas. 
-                    </p>
                     <div class="price-details">
                         <h3>Detalles del Precio</h3>
                         <ul>
                             <li><span>Valor de la Renta:</span> $2.000.000(negociable)</li>
                             <li><span>Servio de internet:</span> 8,000 </li>
                             <li><span>Servios Adicionales:</span> TV Cable, Telefono, wiffi,</li>
-                            <li><span>Deposito de Seguridad:</span> 3 noches de rentas</li>
-                            <li><span>Politica:</span> 3 meses antes de la notificación requerida</li>
+                           
                         </ul>
                     </div><!-- /.price -->
 

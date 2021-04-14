@@ -1,6 +1,6 @@
- <!-- ====== Contact Area ====== -->
+<!-- ====== Contact Area ====== -->
  <div id="contact" class="contact-area">
-     <div class="container-large-device">
+     <div class="container-large-device bg-nero">
          <div class="container-fluid">
              <div class="row">
                  <div class="col-md-12">
