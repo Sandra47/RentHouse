@@ -45,7 +45,7 @@
                 <div class="family-apartment-content mobile-extend">
                     <div class="tb">
                         <div class="tb-cell">
-                            <h3 class="apartment-title">casa Familiar</h3>
+                            <h3 class="apartment-title">Casa Familiar</h3>
                         </div><!-- /.tb-cell -->
                         <div class="tb-cell">
                             <p class="pull-right rent">Valor de la Renta: $2.000.000</p>
@@ -123,11 +123,7 @@
                         </div><!-- /.form-border -->
                     </div><!-- /.widget_rental_search -->
 
-                    <div class="apartments-content seven post clerafix">
-                        <div class="image-content">
-                            <a href="#"><img class="overlay-image" src="views/assets/images/apartment/apartament-family/2house-family.jpg" alt="about" /></a>
-                        </div><!-- /.image-content -->
-                    </div><!-- /.partments-content -->
+                    
                 </div><!-- /.apartment-sidebar -->
             </div> <!-- .col-md-4 -->
         </div> <!-- /.row -->
