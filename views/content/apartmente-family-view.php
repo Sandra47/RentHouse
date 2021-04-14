@@ -56,7 +56,7 @@
                         <ul>
                             <li><span>Valor de la Renta:</span> $2.000.000(negociable)</li>
                             <li><span>Servio de internet:</span> 8,000 </li>
-                            <li><span>Servios Adicionales:</span> TV Cable, Telefono, wiffi,</li>
+                            <li><span>Servios Adicionales:</span> TV Cable, Telefono, wi-fi,</li>
                            
                         </ul>
                     </div><!-- /.price -->
