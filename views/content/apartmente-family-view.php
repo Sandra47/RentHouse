@@ -38,8 +38,8 @@
                                     <img src="views/assets/images/apartment/apartament-family/2house-family.jpg" alt="corousel">
                                 </a>
                             </div>
-
-                          -- /.gallery-two -->
+                        </div>
+                          
                 </div> <!-- /.corousel-gallery-content -->
 
                 <div class="family-apartment-content mobile-extend">
