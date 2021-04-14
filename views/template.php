@@ -37,12 +37,12 @@
 </head>
 
 <body>
-        
-       <!-- ====== Header Area ====== -->
-        <?php include "./views/modules/header.php"; ?>
 
-        <!-- content -->
-        <?php
+    <!-- ====== Header Area ====== -->
+    <?php include "./views/modules/header.php"; ?>
+
+    <!-- content -->
+    <?php
                 
                 require_once "./controllers/ViewsController.php";
                 $IV = new ViewsController;
@@ -55,14 +55,14 @@
                 include  $viewResult;
                 }
         ?>
-        
-        
-        <!-- end content -->
 
-        <!-- ====== Footer Area ====== -->
-        <?php include "./views/modules/footer.php"; ?>
-        
-        <!-- All The JS Files
+
+    <!-- end content -->
+
+    <!-- ====== Footer Area ====== -->
+    <?php include "./views/modules/footer.php"; ?>
+
+    <!-- All The JS Files
     ================================================== -->
-        <?php include "./views/modules/Script.php"; ?>
+    <?php include "./views/modules/Script.php"; ?>
 </body>
