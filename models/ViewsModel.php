@@ -6,7 +6,7 @@
 
         protected static function views_model($views){
             
-            $whiteList=["homepage","apartmente-family","register-house","apartment-partner","formulario","formularioPractica"];
+            $whiteList=["homepage","apartmente-family","register-house","apartment-partner","formulario","formularioPractica","newUser",];
 
             if(in_array($views,$whiteList)){
                 

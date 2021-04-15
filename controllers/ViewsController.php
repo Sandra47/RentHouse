@@ -2,6 +2,7 @@
 
     require_once "./models/ViewsModel.php";
     require_once "./models/house.model.php";
+    require_once "./models/usersModel.php";
 
     class ViewsController extends ViewsModel{
 
