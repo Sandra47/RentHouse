@@ -2,8 +2,8 @@
 $usuario = new UsersController();
 $usuario->insertUserController(); 
 ?> 
-
- <div id="cd-signup">
+jhgjhghjg
+ 
                     <form class="cd-form" method="POST"  action="">
                         <p class="fieldset">
                             <label class="image-replace cd-username" for="signup-username">Nombre completo</label>
@@ -35,4 +35,4 @@ $usuario->insertUserController();
                     </form>
 
                     <a href="#0" class="cd-close-form">Close</a>
-                </div> <!-- cd-signup -->
+              
