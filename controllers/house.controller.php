@@ -1,8 +1,9 @@
 <?php
 class HouseController{
     public static function insertHouseController(){
-        // $request = UsuariosModel::insertUsuariosModel();
-        // echo  $request;
+        // echo ($_POST["title"]);
+        // $request = HouseModel::insertHouseModel();
+        //  echo  $request;
 
         if(isset($_POST["title"])){
             // $encriptar= crypt($_POST["password"],'$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$ ');
@@ -11,10 +12,10 @@ class HouseController{
             // $consulta=HouseModel::isRepeatEmail($tabla,$item);
             // if (!$consulta){
             //     var_dump($consulta);
-
+             
                 $datos=array(
                     "title"=>$_POST["title"],
-                    "descripcion"=>$_POST["descripcion"],
+                    "description"=>$_POST["description"],
                     "imageHouse"=>$_POST["imageHouse"],
                     "numRooms"=>$_POST["numRooms"],
                     "numBath"=>$_POST["numBath"],
@@ -29,7 +30,11 @@ class HouseController{
 
                     // "password"=>$encriptar,
                 );
+                // print_r($datos);
+
                 $request=HouseModel::insertHouseModel($tabla,$datos);
+
+                echo $request;
 
                 if($request=="ok") {
 
@@ -73,8 +78,9 @@ class HouseController{
                 
             // }
         }    
+    }    
 
-    }
+    
 
     // public static function selectUserController(){
     //     $tabla="usuario";
