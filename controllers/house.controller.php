@@ -1,10 +1,10 @@
 <?php
-class UsuariosController{
-    public static function insertUsuarioController(){
+class HouseController{
+    public static function insertHouseController(){
         // $request = UsuariosModel::insertUsuariosModel();
         // echo  $request;
 
-        if(isset($_POST["email"])){
+        if(isset($_POST["title"])){
             // $encriptar= crypt($_POST["password"],'$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$ ');
             $tabla="House";
             // $item=$_POST["email"];
@@ -13,8 +13,19 @@ class UsuariosController{
             //     var_dump($consulta);
 
                 $datos=array(
-                    "name"=>$_POST["name"],
-                    "email"=>$_POST["email"],
+                    "title"=>$_POST["title"],
+                    "descripcion"=>$_POST["descripcion"],
+                    "imageHouse"=>$_POST["imageHouse"],
+                    "numRooms"=>$_POST["numRooms"],
+                    "numBath"=>$_POST["numBath"],
+                    "parking"=>$_POST["parking"],
+                    "serviceInternet"=>$_POST["serviceInternet"],
+                    "aditionalServices"=>$_POST["aditionalServices"],
+                    "priceAlquiler"=>$_POST["priceAlquiler"],
+                    "location"=>$_POST["location"],
+                    "startDateAvail"=>$_POST["startDateAvail"],
+                    "endDateAvail"=>$_POST["endDateAvail"],
+                    "capacity"=>$_POST["capacity"],
 
                     // "password"=>$encriptar,
                 );

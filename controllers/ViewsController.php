@@ -1,8 +1,9 @@
 <?php 
 
     require_once "./models/ViewsModel.php";
+    require_once "./models/house.model.php";
 
-    class viewsController extends viewsModel{
+    class ViewsController extends ViewsModel{
 
         /* Controlador para obtener la plantilla */
 

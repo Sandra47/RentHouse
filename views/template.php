@@ -52,7 +52,7 @@
                 if($viewResult == "404"){
                     require_once "./views/content/".$viewResult."-view.php";
                 }else{
-                include  $viewResult;
+                include $viewResult;
                 }
         ?>
 

@@ -1,3 +1,3 @@
 <?php
-const SERVERURL="http://localhost/Renthouse/RentHouse/";
+const SERVERURL="http://localhost/HoseRenta/RentHouse/";
 const NAME = "Nombre de la Aplicación";

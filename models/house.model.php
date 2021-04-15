@@ -2,35 +2,70 @@
 require_once "conexion.php";
 class HouseModel{
 
-  public static function insertHouseModel($tabla,$datos){
+    public static function insertHouseModel($tabla,$datos){
+  
+      $stmt= Conexion::conectar()->prepare("INSERT INTO $tabla (title,description,
+        imageHouse,numRooms,numBath,parking,serviceInternet,aditionalServices,priceAlquiler,
+        location,starDateAvail,endDateAvail,capacity) VALUES (:title,:description,
+        :imageHouse,:numRooms,:numBath,:parking,:serviceInternet,:aditionalServices,:priceAlquiler,
+        :location,:starDateAvail,:endDateAvail,:capacity)");
+        $stmt->bindParam(":title", $datos["title"], PDO::PARAM_STR);
+        $stmt->bindParam(":description", $datos["description"], PDO::PARAM_STR);
+        $stmt->bindParam(":imageHouse", $datos["imageHouse"], PDO::PARAM_STR);
+        $stmt->bindParam(":numRooms", $datos["numRooms"], PDO::PARAM_STR);
+        $stmt->bindParam(":numBath", $datos["numBath"], PDO::PARAM_STR);
+        $stmt->bindParam(":parking", $datos["parking"], PDO::PARAM_STR);
+        $stmt->bindParam(":serviceInternet", $datos["serviceInternet"], PDO::PARAM_STR);
+        $stmt->bindParam(":aditionalServices", $datos["aditionalServices"], PDO::PARAM_STR);
+        $stmt->bindParam(":priceAlquiler", $datos["priceAlquiler"], PDO::PARAM_STR);
+        $stmt->bindParam(":location", $datos["location"], PDO::PARAM_STR);
+        $stmt->bindParam(":startDateAvail", $datos["startDateAvail"], PDO::PARAM_STR);
+        $stmt->bindParam(":endDateAvail", $datos["endDateAvail"], PDO::PARAM_STR);
+        $stmt->bindParam(":capacity", $datos["capacity"], PDO::PARAM_STR);
+  
+  
+  
+        if ($stmt->execute()){
+           return "ok";
+        }else{
+           return "error";
+        }
+    }
+}
 
-    $stmt= Conexion::conectar()->prepare("INSERT INTO $tabla (title,description,
-      imageHouse,numRooms,numBath,parking,serviceInternet,aditionalServices,priceAlquiler,
-      location,starDateAvail,endDateAvail,capacity) VALUES (:title,:description,
-      :imageHouse,:numRooms,:numBath,:parking,:serviceInternet,:aditionalServices,:priceAlquiler,
-      :location,:starDateAvail,:endDateAvail,:capacity)");
-      $stmt->bindParam(":title", $datos["title"], PDO::PARAM_STR);
-      $stmt->bindParam(":description", $datos["description"], PDO::PARAM_STR);
-      $stmt->bindParam(":imageHouse", $datos["imageHouse"], PDO::PARAM_STR);
-      $stmt->bindParam(":numRooms", $datos["numRooms"], PDO::PARAM_STR);
-      $stmt->bindParam(":numBath", $datos["numBath"], PDO::PARAM_STR);
-      $stmt->bindParam(":parking", $datos["parking"], PDO::PARAM_STR);
-      $stmt->bindParam(":serviceInternet", $datos["serviceInternet"], PDO::PARAM_STR);
-      $stmt->bindParam(":aditionalServices", $datos["aditionalServices"], PDO::PARAM_STR);
-      $stmt->bindParam(":priceAlquiler", $datos["priceAlquiler"], PDO::PARAM_STR);
-      $stmt->bindParam(":location", $datos["location"], PDO::PARAM_STR);
-      $stmt->bindParam(":startDateAvail", $datos["startDateAvail"], PDO::PARAM_STR);
-      $stmt->bindParam(":endDateAvail", $datos["endDateAvail"], PDO::PARAM_STR);
-      $stmt->bindParam(":capacity", $datos["capacity"], PDO::PARAM_STR);
+// <?php
+// require_once "conexion.php";
+// class HouseModel{
+
+//   public static function insertHouseModel($tabla,$datos){
+
+//     $stmt= Conexion::conectar()->prepare("INSERT INTO $tabla (title,description,
+//       imageHouse,numRooms,numBath,parking,serviceInternet,aditionalServices,priceAlquiler,
+//       location,starDateAvail,endDateAvail,capacity) VALUES (:title,:description,
+//       :imageHouse,:numRooms,:numBath,:parking,:serviceInternet,:aditionalServices,:priceAlquiler,
+//       :location,:starDateAvail,:endDateAvail,:capacity)");
+//       $stmt->bindParam(":title", $datos["title"], PDO::PARAM_STR);
+//       $stmt->bindParam(":description", $datos["description"], PDO::PARAM_STR);
+//       $stmt->bindParam(":imageHouse", $datos["imageHouse"], PDO::PARAM_STR);
+//       $stmt->bindParam(":numRooms", $datos["numRooms"], PDO::PARAM_STR);
+//       $stmt->bindParam(":numBath", $datos["numBath"], PDO::PARAM_STR);
+//       $stmt->bindParam(":parking", $datos["parking"], PDO::PARAM_STR);
+//       $stmt->bindParam(":serviceInternet", $datos["serviceInternet"], PDO::PARAM_STR);
+//       $stmt->bindParam(":aditionalServices", $datos["aditionalServices"], PDO::PARAM_STR);
+//       $stmt->bindParam(":priceAlquiler", $datos["priceAlquiler"], PDO::PARAM_STR);
+//       $stmt->bindParam(":location", $datos["location"], PDO::PARAM_STR);
+//       $stmt->bindParam(":startDateAvail", $datos["startDateAvail"], PDO::PARAM_STR);
+//       $stmt->bindParam(":endDateAvail", $datos["endDateAvail"], PDO::PARAM_STR);
+//       $stmt->bindParam(":capacity", $datos["capacity"], PDO::PARAM_STR);
 
 
 
-      if ($stmt->execute()){
-         return "ok";
-      }else{
-         return "error";
-      }
-  }
+//       if ($stmt->execute()){
+//          return "ok";
+//       }else{
+//          return "error";
+//       }
+//   }
 
 //   public static function listarUsuarioModelo($tabla){
 //     $stmt=Conexion::conectar()->prepare("SELECT * FROM $tabla");
@@ -60,4 +95,4 @@ class HouseModel{
 
 
 //   }
-}
+// }

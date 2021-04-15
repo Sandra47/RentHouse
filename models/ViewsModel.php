@@ -1,12 +1,12 @@
 <?php 
 
-    class viewsModel{
+    class ViewsModel{
 
         /* Modelo para obtener las vistas de la aplicación */
 
         protected static function views_model($views){
             
-            $whiteList=["homepage","apartmente-family","register-house","apartment-partner","formulario"];
+            $whiteList=["homepage","apartmente-family","register-house","apartment-partner","formulario","formularioPractica"];
 
             if(in_array($views,$whiteList)){
                 
