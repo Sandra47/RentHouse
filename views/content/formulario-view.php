@@ -7,7 +7,7 @@ $usuario->insertHouseController();
 
     <div class="widget_rental_search clerafix">
         <div class="form-border gradient-border">
-            <form action="booking.html" method="$_POST" class="advance_search_query booking-form">
+            <form action="" method="$_POST" class="advance_search_query booking-form">
                 <div class="form-bg seven">
                     <div class="form-container2">
                         <h2 class="form-title2">Registrar Inmueble para Rentar</h2><br>
@@ -50,22 +50,22 @@ $usuario->insertHouseController();
                             </select><br><br>
 
                             <label>Parqueadero</label>
-                            <input type="fullName" name="parking" placeholder="indique si tiene parqueadero">
+                            <input type="fullName" name="parking" placeholder="Ej: 1">
                             <br> <label>Internet</label>
-                            <input type="fullName" name="serviceInternet" placeholder="servicio de internet">
+                            <input type="fullName" name="serviceInternet" placeholder="Ej: Si">
 
                         </div><!-- /.form-group -->
                         <div class="form-group2">
                             <label>Servicios Adicionales</label>
-                            <textarea name="aditionalServices" rows="05" cols="20">servicios</textarea>
+                            <textarea name="aditionalServices" rows="05" cols="20">Ej:piscina</textarea>
                         </div><!-- /.form-group -->
                         <div class="form-group2">
                             <label>Precio</label>
-                            <input type="priceAlquiler" name="fullName" placeholder="$Valor de la casa por noche">
+                            <input type="priceAlquiler" name="fullName" placeholder="Ej: $250.000">
                         </div><!-- /.form-group -->
                         <div class="form-group2">
                             <label>Dirección</label>
-                            <input type="location" name="fullName" placeholder="Ubicación del inmueble">
+                            <input type="location" name="fullName" placeholder="ej: Armenia">
                         </div><!-- /.form-group -->
 
                         <div class="form-group2">
