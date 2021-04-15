@@ -18,8 +18,8 @@
                                 vida, la vida siempre será
                                 ser
                                 ¡hermosa!</p>
-                            <a href="#" class="button pogoSlider-slide-element" data-in="slideDown"
-                                data-out="slideUp" data-duration="500" data-delay="500">Ofertas Especiales</a>
+                            <a href="#" class="button pogoSlider-slide-element" data-in="slideDown" data-out="slideUp"
+                                data-duration="500" data-delay="500">Ofertas Especiales</a>
                         </div><!-- /.text-content -->
                     </div><!-- /.col-md-12 -->
                 </div><!-- /.row -->
@@ -43,8 +43,8 @@
                                 ser
                                 ¡hermosa!
                             </p>
-                            <a href="#" class="button pogoSlider-slide-element" data-in="slideDown"
-                                data-out="slideUp" data-duration="500" data-delay="500">Ofertas Especiales</a>
+                            <a href="#" class="button pogoSlider-slide-element" data-in="slideDown" data-out="slideUp"
+                                data-duration="500" data-delay="500">Ofertas Especiales</a>
                         </div><!-- /.text-content -->
                     </div><!-- /.col-md-12 -->
                 </div><!-- /.row -->
@@ -81,7 +81,7 @@
                                 <option value="mercedes">Mercedes</option>
                                 <option value="audi">Audi</option>
                             </select>
-                        </div><!-- /.form-group -->
+                        </div><-- /.form-group -->
                         <div class="form-group">
                             <label>Precio</label>
                             <input type="text" name="FirstName" placeholder="min">
@@ -89,7 +89,7 @@
                         <!-- <div class="form-group">
                             <label>Male</label>
                             <input type="text" name="FirstName" placeholder="max">
-                        </div><!-- /.form-group  -->
+                        </div><-- /.form-group  -->
                         <div class="form-group">
                             <label>Para</label>
                             <select>
@@ -109,7 +109,7 @@
 
 <!-- ====== About Us Area ====== -->
 <div id="about" class="aboutus-area">
-    <div class="container">
+        <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="heading-content-one">
