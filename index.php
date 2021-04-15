@@ -1,5 +1,9 @@
 <?php
 
+	//Llamado a la clase de Conexión
+	require 'providers/Database.php';
+
+
     require_once "./config/APP.php";
     require_once "./controllers/ViewsController.php";
   require_once "./controllers/house.controller.php";
