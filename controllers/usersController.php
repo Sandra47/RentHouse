@@ -1,62 +1,114 @@
 <?php
+class UsersController{
+    public static function insertUserController(){
+        // $request = UsuariosModel::insertUsuariosModel();
+        // echo  $request;
 
-require 'models/usersModel.php';
+        if(isset($_POST["fullname"])){
+             $encriptar= crypt($_POST["password"],'$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$ ');
+            $tabla="User";
+             $item=$_POST["email"];
+             $consulta=usersModel::isRepeatEmail($tabla,$item);
+            if (!$consulta){
+                var_dump($consulta);
 
-/**
- * Clase controlador tipo de estado
- */
-class usersController
-{
+                $datos=array(
+                    "fullname"=>$_POST["fullname"],
+                    "email"=>$_POST["email"],
+                    "password"=>$_POST["password"],
+                    "city"=>$_POST["city"],
+                    "roles"=>$_POST["roles"],
+                    "dpr"=>$_POST["dpr"],
 
-	private $typestatusesModel;
+                    
+                );
+                $request=usersModel::insertUsersModel($tabla,$datos);
 
-    public function __construct()
-    {
-   		$this->typestatusesModel = new usersModel;
+                if($request=="ok") {
+
+            
+                    echo"
+                    <script>
+                    
+                    Swal.fire({
+                            icon: 'success',
+                            confirmButtonText: `Ok`,
+                            text: 'Registro exitoso!',
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                window.location = 'usuarios';
+                            }
+                    }) 
+                    </script>";
+                }else {
+                    echo"
+                    <script>
+                    
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error!',
+                        text: 'Registro no ingresado !',
+                        footer: '<a href>Why do I have this issue?</a>'
+                    })
+                    </script>";
+                }
+             }else{
+                 echo"
+                 <script>
+                
+                Swal.fire({
+                     icon: 'error',
+                    title: 'Error!',
+                    text: 'No sirve !',
+                     footer: '<a href>Why do I have this issue?</a>'
+                })
+                </script>";
+                
+             }
+        }    
+
     }
 
-    public function index()
-    {
-    	$users = $this->usersModel->getAll();
-    	require 'views/template.php';
-    	require 'views/users/list.php';
-    }
-		public function new()
-{
-		require 'views/template.php';
-		require 'views/users/new.php';
-}
+    // public static function selectUserController(){
+    //     $tabla="usuario";
+    //     $sql=usuariosModel::listarUsuarioModelo($tabla);
+    //    // echo "<pre>"
+    //        // print_r($sql);
+    //    // echo "</pre>";
 
-public function save()
-{
-		$this->usersModel->newUsers($_POST);
-		header('Location: ?controller=users');
-}
-public function edit()
-{
-		if(isset($_REQUEST['idusers'])) {
-				$id = $_REQUEST['idusers'];
+      
+    //    foreach($sql as $datos => $value){
+    //     // echo "<tr>";
+    //     // echo "<td>". $value["id"]."</td>";
+    //     // echo "<td>". $value["name"]."</td>";
+    //     // echo "<td>". $value["email"]."</td>";
+    //     // echo "<td>". $value["password"]."</td>";
+    //     // echo "<td><button type='button' class='btn' idEditar=".$value["id"].">Editar</button> 
+    //     //      <button type='button' class='btn' idEliminar=".$value["id"]."> Eliminar</button></td>";
+    //     // echo "</tr>";
+    //        //otra manera
+    //        echo"
+           
+    //        <tr>
+    //           <td>{$value["id"]}</td>
+    //           <td>{$value["name"]}</td>
+    //           <td>{$value["email"]}</td>
+    //           <td>{$value["password"]}</td>
+    //           <td><button type='button' class='editar' idEditar='{$value["id"]}'>Editar</button> 
+    //           <br> <button type='button' class='borrar' idBorrar='{$value["id"]}'> Eliminar</button></td>
+        
+    //        </tr>
+    //        ";
+    //    }
+       
+    // }
 
-				$users = $this->usersModel->getById($id);
-				require 'views/template.php';
-				require 'views/users/edit.php';
-		} else {
-				echo "El tipo de No Existe";
-		}
-}
-
-public function update()
-{
-		if(isset($_POST)) {
-				$this->usersModel->editUsers($_POST);
-				header('Location: ?controller=users');
-		} else {
-				echo "Error, acción no permitida.";
-		}
-}
-public function delete()
-{
-		$this->usersModel->deleteUsers($_REQUEST);
-		header('Location: ?controller=users');
-}
+    // public static function eliminarUsuarioController($id){
+    //     $tabla = "usuario";
+    //     $sql = UsuariosModel::eliminarUsuarioModelo($tabla, $id);
+    //     echo $sql;
+        
+    // }
+       
+    
 }

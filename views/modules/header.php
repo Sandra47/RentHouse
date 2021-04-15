@@ -25,7 +25,11 @@
                                                     - 300-2323232</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="cd-signin"><i class="fa fa-address-book"></i>Ingresar
+                                                <a class="nav-link" href="login.php"><i class="fa fa-address-book"></i>Ingresar
+                                            </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="?controller=movies"><i class="fa fa-address-book"></i>
                                                     / Registro</a>
                                             </li>
                                         </ul>
@@ -39,7 +43,7 @@
                     <div class="logo-area tb-cell">
                         <div class="site-logo">
                             <a href="template.php">
-                                <img src="views/assets/images/logo/casas (1).png" alt="site-logo" />
+                                <img src="views/assets/images/logo/casas(1).png" alt="site-logo" />
                             </a>
                         </div><!-- /.site-logo -->
                     </div><!-- /.logo-area -->
@@ -74,8 +78,8 @@
                                 <a href="#"><i class="fa fa-phone-square"></i>Reservas (+57) 300-2323232</a>
                             </li>
                             <li>
-                                <a href="#" class="cd-signin"><i class="fa fa-address-book"></i>Ingresar /
-                                        Registro</a>
+                                <a href="newUser.php" ><i></i>Registrarse
+                                        </a>
                             </li>
                             <li>
                                 <a href="#" class="main-search"><i class="fa fa-search"></i></a>
@@ -214,78 +218,9 @@
                     <li><a href="#0">Registro</a></li>
                 </ul>
 
-                <!-- log in form -->
-                <div id="cd-login">
-                    <form class="cd-form">
-                        <p class="fieldset">
-                            <label class="image-replace cd-email" for="signin-email">Correo Electronico</label>
-                            <input class="full-width has-padding has-border" id="signin-email" type="email"
-                                placeholder="E-mail">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
 
-                        <p class="fieldset">
-                            <label class="image-replace cd-password" for="signin-password">Contrasena</label>
-                            <input class="full-width has-padding has-border" id="signin-password" type="text"
-                                placeholder="Password">
-                            <a href="#0" class="hide-password">Hide</a>
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
 
-                        <p class="fieldset">
-                            <input type="checkbox" id="remember-me" checked>
-                            <label for="remember-me">Recordar mi cuenta</label>
-                        </p>
-
-                        <p class="fieldset">
-                            <input class="full-width" type="submit" value="Login">
-                        </p>
-                    </form>
-
-                    <p class="cd-form-bottom-message">
-                        <a href="#0">Olvidé mi cotraseña?</a>
-                    </p>
-                    <a href="#0" class="cd-close-form">Close</a>
-                </div> <!-- cd-login -->
-
-                <!-- sign up form -->
-                <div id="cd-signup">
-                    <form class="cd-form">
-                        <p class="fieldset">
-                            <label class="image-replace cd-username" for="signup-username">Usuario</label>
-                            <input class="full-width has-padding has-border" id="signup-username" type="text"
-                                placeholder="Username">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-
-                        <p class="fieldset">
-                            <label class="image-replace cd-email" for="signup-email">Correo Electronico</label>
-                            <input class="full-width has-padding has-border" id="signup-email" type="email"
-                                placeholder="E-mail">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-
-                        <p class="fieldset">
-                            <label class="image-replace cd-password" for="signup-password">Contraseña</label>
-                            <input class="full-width has-padding has-border" id="signup-password" type="text"
-                                placeholder="Password">
-                            <a href="#0" class="hide-password">Hide</a>
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-
-                        <p class="fieldset">
-                            <input type="checkbox" id="accept-terms">
-                            <label for="accept-terms">De acuerdo <a href="#0">Terminos</a></label>
-                        </p>
-
-                        <p class="fieldset">
-                            <input class="full-width has-padding" type="submit" value="Create account">
-                        </p>
-                    </form>
-
-                    <a href="#0" class="cd-close-form">Close</a>
-                </div> <!-- cd-signup -->
-
+               
                 <!-- reset password form -->
                 <div id="cd-reset-password">
                     <p class="cd-form-message">¿No recuerdas tu contraseña? Ingresa tu correo Electronico. a
