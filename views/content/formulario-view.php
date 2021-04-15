@@ -1,3 +1,8 @@
+<?php
+$usuario = new HouseController();
+$usuario->insertHouseController();
+?>
+
 <div class="col-md-4">
     <div class="apartment-sidebar">
         <div class="widget_rental_search clerafix">
@@ -8,73 +13,75 @@
                             <h2 class="form-title">Registrar Inmueble para Rentar</h2>
                             <div class="form-group">
                                 <label>Nombre para tu casa</label>
-                                <input type="fullName" name="fullName" placeholder="titulo  de la casa">
+                                <input type="fullName" name="title" placeholder="titulo  de la casa">
                             </div><!-- /.form-group -->
                             <div class="form-group">
                                 <label>Descripción</label>
-                                <textarea name="textarea" rows="10" cols="50">Descripción de la casa</textarea>
+                                <textarea name="description" rows="10" cols="50">Descripción de la casa</textarea>
                             </div><!-- /.form-group -->
                             <div class="form-group">
-                                <label>Capacidad de personas</label>
-                                <select name="numero" id="personas">
+                                <label>upload image</label>
+                                <textarea name="imageHouse" rows="05" cols="50">Descripción de la casa</textarea>
+                            </div><!-- /.form-group -->
+                            <div class="form-group">
+                                <label>Número de Habitaciones</label>
+                                <select name="numRooms" id="personas">
                                     <option value="1">1</option>
-                                    <option value="1">2</option>
-                                    <option value="1">3</option>
-                                    <option value="1">4</option>
-                                    <option value="1">5</option>
-                                    <option value="1">6</option>
-                                    <option value="1">7</option>
-                                    <option value="1">8</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+
                                 </select>
 
                             </div><!-- /.form-group -->
                             <div class="form-group">
-                                <label>Cantidad de Habitaciones</label>
-                                <select name="numero" id="personas">
+                                <label>Número de Baños</label>
+                                <select name="numBath" id="personas">
                                     <option value="1">1</option>
-                                    <option value="1">2</option>
-                                    <option value="1">3</option>
-                                    <option value="1">4</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
                                 </select>
-                                <label>Cantidad de Baños</label>
-                                <select name="numero" id="personas">
-                                    <option value="1">1</option>
-                                    <option value="1">2</option>
-                                    <option value="1">3</option>
-                                    <option value="1">4</option>
-                                </select>
-
-                                <label>Internet<input type="checkbox" id="cbox1" value="first_checkbox">Si</label><br>
-                                <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">No</label>
-
-
-
-                                <label>Parking<input type="checkbox" id="cbox1" value="first_checkbox">Si</label><br>
-                                <input type="checkbox" id="cbox2" value="second_checkbox">No</label>
-
+                                <label>Parqueadero</label>
+                                <input type="fullName" name="parking" placeholder="indique si tiene parqueadero">
+                                <label>Internet</label>
+                                <input type="fullName" name="serviceInternet" placeholder="servicio de internet">
 
                             </div><!-- /.form-group -->
                             <div class="form-group">
                                 <label>Servicios Adicionales</label>
-                                <textarea name="textarea" rows="05" cols="20">servicios</textarea>
+                                <textarea name="aditionalServices" rows="05" cols="20">servicios</textarea>
                             </div><!-- /.form-group -->
                             <div class="form-group">
-                                <label>Precio de Alquiler por noche</label>
-                                <input type="fullName" name="fullName" placeholder="$Valor de la casa por noche">
+                                <label>Precio</label>
+                                <input type="priceAlquiler" name="fullName" placeholder="$Valor de la casa por noche">
+                            </div><!-- /.form-group -->
+                            <div class="form-group">
+                                <label>Dirección</label>
+                                <input type="location" name="fullName" placeholder="Ubicación del inmueble">
                             </div><!-- /.form-group -->
 
                             <div class="form-group">
                                 <label>Fecha llegada</label>
-                                <input type="date" name="fecha">
+                                <input type="date" name="starDateAvail">
                                 <label>Fecha salida</label>
-                                <input type="date" name="fecha">
+                                <input type="date" name="endDateAvail">
 
                             </div><!-- /.form-group -->
                         </div><!-- /.form-group -->
-                        <div class="form-group">
-                            <label>Dirección</label>
-                            <input type="fullName" name="fullName" placeholder="Ubicación del inmueble">
-                        </div><!-- /.form-group -->
+                        <div>
+                            <label>Capacidad de personas </label>
+                            <select name="capacity" id="personas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
 
                         <div class="form-group">
                             <p class="fieldset">
