@@ -6,6 +6,8 @@
 
     require_once "./config/APP.php";
     require_once "./controllers/ViewsController.php";
+    require_once "./controllers/usersController.php";
+    require_once "./models/usersModel.php";
 
 
     

@@ -1,67 +1,89 @@
 <?php
+require_once "conexion.php";
+class usersModel{
 
-/**
- * Clase Modelo tipo de estados
- */
-class usersModel
-{
-
-  private $pdo;
-
-    public function __construct()
-    {
-    	try {
-    		$this->pdo = new Database;
-	    } catch (PDOException $e) {
-	    	die($e->getMessage());
-	    }
+    public static function insertUsersModel($tabla,$datos){
+  
+      $stmt= Conexion::conectar()->prepare("INSERT INTO $tabla (fullname,email,
+        password,city,dpr,roles) VALUES (:fullname,:password,
+        :city,:dpr,:roles)");
+        $stmt->bindParam(":fullname", $datos["fullname"], PDO::PARAM_STR);
+        $stmt->bindParam(":email", $datos["email"], PDO::PARAM_STR);
+        $stmt->bindParam(":password", $datos["password"], PDO::PARAM_STR);
+        $stmt->bindParam(":city", $datos["city"], PDO::PARAM_STR);
+        $stmt->bindParam(":dpr", $datos["dpr"], PDO::PARAM_STR);
+        $stmt->bindParam(":roles", $datos["roles"], PDO::PARAM_STR);  
+  
+  
+        if ($stmt->execute()){
+           return "ok";
+        }else{
+           return "error";
+        }
     }
+	public static function isRepeatEmail($tabla,$item){
+		$stmt=Conexion::conectar()->prepare("SELECT email FROM $tabla WHERE email=:item");
+		 $stmt->bindParam(":item", $item, PDO::PARAM_STR);
+		$stmt->execute();
+		return $stmt->fetch();
+	
+	  }
+}
 
-    public function getAll()
-    {
-    	try {
-    		$strSql = "SELECT * FROM user";
-    		return $this->pdo->select($strSql);
-    	} catch (PDOException $e) {
-    		die($e->getMessage());
-    	}
-    }
-		public function newUsers($data)
-{
-		try {
-				$this->pdo->insert("user",$data);
-		} catch(PDOException $e) {
-				die($e->getMessage());
-		}
-}
-public function getById($id)
-{
-	 try {
-				$strSql = "SELECT * FROM user WHERE idUser=:idUser";
-				$arrayData = ['idUser' => $id];
-				return $this->pdo->select($strSql, $arrayData);
-		} catch (PDOException $e) {
-				die($e->getMessage());
-		}
-}
-public function editUsers($data)
-{
-		try {
-				$strWhere = 'idUser = '. $data['idUser'];
-				$table = 'user';
-				$this->pdo->update($table, $data, $strWhere);
-		} catch (PDOException $e) {
-				die($e->getMessage());
-		}
-}
-public function deleteUsers($data)
-{
-		try {
-				$strWhere = 'idUser = '. $data['idUser'];
-				$table = 'user';
-				$this->pdo->delete($table, $strWhere);
-		} catch (PDOException $e) {
-				die($e->getMessage());
-		}
-}
-}
+// <?php
+// require_once "conexion.php";
+// class HouseModel{
+
+//   public static function insertHouseModel($tabla,$datos){
+
+//     $stmt= Conexion::conectar()->prepare("INSERT INTO $tabla (title,description,
+//       imageHouse,numRooms,numBath,parking,serviceInternet,aditionalServices,priceAlquiler,
+//       location,starDateAvail,endDateAvail,capacity) VALUES (:title,:description,
+//       :imageHouse,:numRooms,:numBath,:parking,:serviceInternet,:aditionalServices,:priceAlquiler,
+//       :location,:starDateAvail,:endDateAvail,:capacity)");
+//       $stmt->bindParam(":title", $datos["title"], PDO::PARAM_STR);
+//       $stmt->bindParam(":description", $datos["description"], PDO::PARAM_STR);
+//       $stmt->bindParam(":imageHouse", $datos["imageHouse"], PDO::PARAM_STR);
+//       $stmt->bindParam(":numRooms", $datos["numRooms"], PDO::PARAM_STR);
+//       $stmt->bindParam(":numBath", $datos["numBath"], PDO::PARAM_STR);
+//       $stmt->bindParam(":parking", $datos["parking"], PDO::PARAM_STR);
+//       $stmt->bindParam(":serviceInternet", $datos["serviceInternet"], PDO::PARAM_STR);
+//       $stmt->bindParam(":aditionalServices", $datos["aditionalServices"], PDO::PARAM_STR);
+//       $stmt->bindParam(":priceAlquiler", $datos["priceAlquiler"], PDO::PARAM_STR);
+//       $stmt->bindParam(":location", $datos["location"], PDO::PARAM_STR);
+//       $stmt->bindParam(":startDateAvail", $datos["startDateAvail"], PDO::PARAM_STR);
+//       $stmt->bindParam(":endDateAvail", $datos["endDateAvail"], PDO::PARAM_STR);
+//       $stmt->bindParam(":capacity", $datos["capacity"], PDO::PARAM_STR);
+
+
+
+//       if ($stmt->execute()){
+//          return "ok";
+//       }else{
+//          return "error";
+//       }
+//   }
+
+//   public static function listarUsuarioModelo($tabla){
+//     $stmt=Conexion::conectar()->prepare("SELECT * FROM $tabla");
+//     $stmt->execute();
+//     return $stmt->fetchAll();
+
+//   }
+
+
+
+//   public static function eliminarUsuarioModelo($tabla, $id){
+//     $stmt = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE id = :id");
+//     $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+//     if($stmt->execute()) {
+//       return "ok";
+//     }else{
+//       return "error";
+//     }
+    
+//     // return $stmt->execute();
+
+
+//   }
+// }
