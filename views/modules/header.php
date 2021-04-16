@@ -75,7 +75,7 @@
                             </li>
                             <li>
                                 <a href="#" class="cd-signin"><i class="fa fa-address-book"></i>Ingresar /
-                                        Registro</a>
+                                    Registro</a>
                             </li>
                             <li>
                                 <a href="#" class="main-search"><i class="fa fa-search"></i></a>
@@ -126,7 +126,7 @@
                                     <a href="#">Galeria</a>
                                     <ul class="sub-menu">
                                         <li>
-                                            <a href="#galeria">Galeria</a>
+                                            <a href="#apartments">Ver</a>
                                         </li>
                                         <!-- <li>
                                                 <a href="404.html">404</a>
@@ -146,166 +146,167 @@
                     </div> <!-- /.menu-wrapper -->
                 </nav><!-- /.site-navigation -->
             </div><!-- /.col-md-10 -->
-       </div><!-- /.row -->
+        </div><!-- /.row -->
     </div><!-- /.container -->
-</header><!--/.header-bottom-content -->
+</header>
+<!--/.header-bottom-content -->
 
-    <!-- ====== Header Overlay Content ====== -->
-    <div class="header-overlay-content">
-        <!-- overlay-menu-item -->
-        <div class="overlay overlay-hugeinc gradient-transparent overlay-menu-item">
-            <button type="button" class="overlay-close">Cerrar</button>
-            <nav>
-                <ul class="overlay-menu">
-                    <li><a href="homepage">Inicio</a></li>
-                    <li> <a href="apartmente-family">Casas</a> </li>
-                    <li> <a href="apartment-single">Apartamentos</a></li>
-                </ul>
-            </nav>
-        </div> <!-- /.overlay-menu-item -->
+<!-- ====== Header Overlay Content ====== -->
+<div class="header-overlay-content">
+    <!-- overlay-menu-item -->
+    <div class="overlay overlay-hugeinc gradient-transparent overlay-menu-item">
+        <button type="button" class="overlay-close">Cerrar</button>
+        <nav>
+            <ul class="overlay-menu">
+                <li><a href="homepage">Inicio</a></li>
+                <li> <a href="apartmente-family">Casas</a> </li>
+                <li> <a href="apartment-single">Apartamentos</a></li>
+            </ul>
+        </nav>
+    </div> <!-- /.overlay-menu-item -->
 
-        <!-- header-search-content -->
-        <div class="gradient-transparent overlay-search">
-            <button type="button" class="overlay-close">Close</button>
-            <div class="header-search-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <form action="#" method="get" class="searchform">
-                                <div class="input-group" id="adv-search">
-                                    <input type="text" class="form-controller" placeholder="Search for snippets" />
-                                    <div class="input-group-btn">
-                                        <div class="btn-group" role="group">
-                                            <div class="dropdown dropdown-lg">
-                                                <button type="button" class="btn btn-default dropdown-toggle"
-                                                    data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="fa fa-caret-down"></span>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-right" role="menu">
-                                                    <div class="form-horizontal">
-                                                        <div class="checkbox">
-                                                            <label><input type="checkbox"> From Blog</label>
-                                                        </div>
-                                                        <div class="checkbox">
-                                                            <label><input type="checkbox">Encuentra tu lugar de
-                                                                vacaciones</label>
-                                                        </div>
+    <!-- header-search-content -->
+    <div class="gradient-transparent overlay-search">
+        <button type="button" class="overlay-close">Close</button>
+        <div class="header-search-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="#" method="get" class="searchform">
+                            <div class="input-group" id="adv-search">
+                                <input type="text" class="form-controller" placeholder="Search for snippets" />
+                                <div class="input-group-btn">
+                                    <div class="btn-group" role="group">
+                                        <div class="dropdown dropdown-lg">
+                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                data-toggle="dropdown" aria-expanded="false">
+                                                <span class="fa fa-caret-down"></span>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                <div class="form-horizontal">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox"> From Blog</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox">Encuentra tu lugar de
+                                                            vacaciones</label>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">
-                                                <span class="fa fa-search" aria-hidden="true"></span>
-                                            </button>
                                         </div>
+                                        <button type="submit" class="btn btn-primary">
+                                            <span class="fa fa-search" aria-hidden="true"></span>
+                                        </button>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div><!-- /.header-search-content -->
+        </div>
+    </div><!-- /.header-search-content -->
 
-        <!-- Registrar Or Sign In-content -->
-        <div class="cd-user-modal">
-            <div class="cd-user-modal-container">
-                <ul class="cd-switcher">
-                    <li><a href="#0">Ingresar</a></li>
-                    <li><a href="#0">Registro</a></li>
-                </ul>
+    <!-- Registrar Or Sign In-content -->
+    <div class="cd-user-modal">
+        <div class="cd-user-modal-container">
+            <ul class="cd-switcher">
+                <li><a href="#0">Ingresar</a></li>
+                <li><a href="#0">Registro</a></li>
+            </ul>
 
-                <!-- log in form -->
-                <div id="cd-login">
-                    <form class="cd-form">
-                        <p class="fieldset">
-                            <label class="image-replace cd-email" for="signin-email">Correo Electronico</label>
-                            <input class="full-width has-padding has-border" id="signin-email" type="email"
-                                placeholder="E-mail">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-
-                        <p class="fieldset">
-                            <label class="image-replace cd-password" for="signin-password">Contrasena</label>
-                            <input class="full-width has-padding has-border" id="signin-password" type="text"
-                                placeholder="Password">
-                            <a href="#0" class="hide-password">Hide</a>
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-
-                        <p class="fieldset">
-                            <input type="checkbox" id="remember-me" checked>
-                            <label for="remember-me">Recordar mi cuenta</label>
-                        </p>
-
-                        <p class="fieldset">
-                            <input class="full-width" type="submit" value="Login">
-                        </p>
-                    </form>
-
-                    <p class="cd-form-bottom-message">
-                        <a href="#0">Olvidé mi cotraseña?</a>
+            <!-- log in form -->
+            <div id="cd-login">
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signin-email">Correo Electronico</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email"
+                            placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
                     </p>
-                    <a href="#0" class="cd-close-form">Close</a>
-                </div> <!-- cd-login -->
 
-                <!-- sign up form -->
-                <div id="cd-signup">
-                    <form class="cd-form">
-                        <p class="fieldset">
-                            <label class="image-replace cd-username" for="signup-username">Usuario</label>
-                            <input class="full-width has-padding has-border" id="signup-username" type="text"
-                                placeholder="Username">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">Contrasena</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text"
+                            placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
 
-                        <p class="fieldset">
-                            <label class="image-replace cd-email" for="signup-email">Correo Electronico</label>
-                            <input class="full-width has-padding has-border" id="signup-email" type="email"
-                                placeholder="E-mail">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Recordar mi cuenta</label>
+                    </p>
 
-                        <p class="fieldset">
-                            <label class="image-replace cd-password" for="signup-password">Contraseña</label>
-                            <input class="full-width has-padding has-border" id="signup-password" type="text"
-                                placeholder="Password">
-                            <a href="#0" class="hide-password">Hide</a>
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Login">
+                    </p>
+                </form>
 
-                        <p class="fieldset">
-                            <input type="checkbox" id="accept-terms">
-                            <label for="accept-terms">De acuerdo <a href="#0">Terminos</a></label>
-                        </p>
-
-                        <p class="fieldset">
-                            <input class="full-width has-padding" type="submit" value="Create account">
-                        </p>
-                    </form>
-
-                    <a href="#0" class="cd-close-form">Close</a>
-                </div> <!-- cd-signup -->
-
-                <!-- reset password form -->
-                <div id="cd-reset-password">
-                    <p class="cd-form-message">¿No recuerdas tu contraseña? Ingresa tu correo Electronico. a
-                        recibirás un enlace con instrucciones para el cambio de contraseña.</p>
-
-                    <form class="cd-form">
-                        <p class="fieldset">
-                            <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                            <input class="full-width has-padding has-border" id="reset-email" type="email"
-                                placeholder="E-mail">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-                        <p class="fieldset">
-                            <input class="full-width has-padding" type="submit" value="Reset password">
-                        </p>
-                    </form>
-
-                    <p class="cd-form-bottom-message"><a href="#0">Regresar</a></p>
-                </div> <!-- cd-reset-password -->
+                <p class="cd-form-bottom-message">
+                    <a href="#0">Olvidé mi cotraseña?</a>
+                </p>
                 <a href="#0" class="cd-close-form">Close</a>
-            </div> <!-- cd-user-modal-container -->
-        </div> <!-- cd-user-modal -->
-    </div><!-- /.header-overlay-content -->
+            </div> <!-- cd-login -->
+
+            <!-- sign up form -->
+            <div id="cd-signup">
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">Usuario</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text"
+                            placeholder="Username">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signup-email">Correo Electronico</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email"
+                            placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">Contraseña</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="text"
+                            placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">De acuerdo <a href="#0">Terminos</a></label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Create account">
+                    </p>
+                </form>
+
+                <a href="#0" class="cd-close-form">Close</a>
+            </div> <!-- cd-signup -->
+
+            <!-- reset password form -->
+            <div id="cd-reset-password">
+                <p class="cd-form-message">¿No recuerdas tu contraseña? Ingresa tu correo Electronico. a
+                    recibirás un enlace con instrucciones para el cambio de contraseña.</p>
+
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="reset-email" type="email"
+                            placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Reset password">
+                    </p>
+                </form>
+
+                <p class="cd-form-bottom-message"><a href="#0">Regresar</a></p>
+            </div> <!-- cd-reset-password -->
+            <a href="#0" class="cd-close-form">Close</a>
+        </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
+</div><!-- /.header-overlay-content -->
