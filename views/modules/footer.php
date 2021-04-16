@@ -25,7 +25,7 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="contact">
                                     <h4><i class="fa fa-address-book"></i>Direccion</h4>
-                                    <p>Av. Bolívar ##23-27, Armenia, Quindío, Colombia</p>
+                                    <p>Av. Bolívar ##23-27, Armenía, Quindío, Colombia</p>
                                 </div><!-- /.contact -->
                             </div><!-- /.col-md-6 -->
                             <div class="col-md-6 col-sm-6">

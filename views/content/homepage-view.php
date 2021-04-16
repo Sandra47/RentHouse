@@ -16,7 +16,7 @@
                                 la
                                 situación en la que nos encontramos, si tenemos la perspectiva correcta en la
                                 vida, la vida siempre será
-                                ser
+
                                 ¡hermosa!</p>
                             <!-- <a href="#" class="button pogoSlider-slide-element" data-in="slideDown" data-out="slideUp"
                                 data-duration="500" data-delay="500">Ofertas Especiales</a> -->
