@@ -9,6 +9,8 @@
     require_once "./controllers/usersController.php";
     require_once "./models/usersModel.php";
 
+    require_once "./controllers/casa.contoler.php";
+    require_once "./models/casa.model.php";
 
     
    
