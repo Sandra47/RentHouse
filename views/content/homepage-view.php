@@ -58,9 +58,7 @@ $descrip=$usuario->selectHouseController();
 </div><!-- /.slider-area container-fluid -->
 
 <!-- ====== Apartments Area ====== -->
-<?php
-foreach($descrip as $datos => $value){
-}?>
+
 <div class="apartments-area bg-gray-color">
     <div class="container">
         <div class="row">
@@ -69,187 +67,50 @@ foreach($descrip as $datos => $value){
                     <h2 class="title" id="apartments">Casas &amp; Apartamentos</h2>
                     <h5 class="sub-title">Encuentra la Casa o Apartemento Ideal</h5>
                 </div><!-- /.Apartments-heading-content -->
-            </div><!-- /.col-md-12 -->
+            </div>
         </div><!-- /.row -->
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="apartments-content">
-                    <div class="image-content">
-                        <a href="apartment-single.html"><img src="views/assets/images/apartment/apartamentos1.png"
-                                alt="apartment" /></a>
+        <?php
+
+      foreach($descrip as $datos => $value){
+        echo"  
+        <div class='row'>
+      
+            <div class='col-md-4 col-sm-6 col-xs-6'>
+                <div class='apartments-content'>
+                    <div class='image-content'>
+                        <a href='formulario'><img src='views/assets/images/apartment/apartamentos1.png'
+                                alt='apartment' /></a>
                     </div><!-- /.image-content -->
 
-                    <div class="text-content">
-                        <div class="top-content">
-                            <h3><a href="apartment-single.html"><?php echo $value["title"] ?></a></h3>
+                    <div class='text-content'>
+                        <div class='top-content'>
+                            <h3><a href='apartment-single.html'>{$value["title"]}</a></h3>
                             <span>
-                                <i class="fa fa-map-marker"></i>
+                                <i class='fa fa-map-marker'></i>
                                 Armenía-Quindío
                             </span>
                         </div><!-- /.top-content -->
-                        <div class="bottom-content clearfix">
-                            <div class="meta-bed-room">
-                                <i class="fa fa-bed"></i> <?php echo $value["numRooms"] ?> Alcobas
+                        <div class='bottom-content clearfix'>
+                            <div class='meta-bed-room'>
+                                <i class='fa fa-bed'></i> {$value["numRooms"]} Alcobas
                             </div>
-                            <div class="meta-bath-room">
-                                <i class="fa fa-bath"></i> <?php echo $value["numBath"] ?> Baños
+                            <div class='meta-bath-room'>
+                                <i class='fa fa-bath'></i> {$value["numBath"]}Baños
                             </div>
-                            <span class="clearfix"></span>
-                            <div class="rent-price pull-left">
-                            <?php echo $value["priceAlquiler"] ?> 
+                            <span class='clearfix'></span>
+                            <div class='rent-price pull-left'>
+                            {$value["priceAlquiler"]} 
                             </div>
-                            <div class="share-meta dropup pull-right">
-                                <ul>
-                                    <li class="dropup">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                            aria-haspopup="true" aria-expanded="false"><i
-                                                class="fa fa-share-alt"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div><!-- /.bottom-content -->
-                    </div><!-- /.text-content -->
-                </div><!-- /.partments-content -->
-            </div><!-- /.col-md-4 -->
-    
-        }
-       ?>
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="apartments-content">
-                    <div class="image-content">
-                        <a href="apartment-single.html"><img src="views/assets/images/gallery/about-image.jpg"
-                                alt="apartment" /></a>
-                    </div><!-- /.image-content -->
-
-                    <div class="text-content">
-                        <div class="top-content">
-                            <h3><a href="apartment-single.html">Casa Campestre</a></h3>
-                            <span>
-                                <i class="fa fa-map-marker"></i>
-                                Armenía, Quindío
-                            </span>
-                        </div><!-- /.top-content -->
-                        <div class="bottom-content clearfix">
-                            <div class="meta-bed-room">
-                                <i class="fa fa-bed"></i> 2 alcobas
-                            </div>
-                            <div class="meta-bath-room">
-                                <i class="fa fa-bath"></i>1 baño
-                            </div>
-                            <span class="clearfix"></span>
-                            <div class="rent-price pull-left">
-                                $200.000
-                            </div>
-                            <div class="share-meta dropup pull-right">
-                                <ul>
-                                    <li class="dropup">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                            aria-haspopup="true" aria-expanded="false"><i
-                                                class="fa fa-share-alt"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div><!-- /.bottom-content -->
-                    </div><!-- /.text-content -->
-                </div><!-- /.partments-content -->
-            </div><!-- /.col-md-4 -->
-            <div class="clearfix hidden-md hidden-lg"></div>
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="apartments-content">
-                    <div class="image-content">
-                        <a href="apartment-single.html"><img src="views/assets/images/apartment/apartamento2.jpeg"
-                                alt="apartment" /></a>
-                    </div><!-- /.image-content -->
-
-                    <div class="text-content">
-                        <div class="top-content">
-                            <h3><a href="apartment-single.html">Apartamento Familiar</a></h3>
-                            <span>
-                                <i class="fa fa-map-marker"></i>
-                                Armenía-Quindío
-                            </span>
-                        </div><!-- /.top-content -->
-                        <div class="bottom-content clearfix">
-                            <div class="meta-bed-room">
-                                <i class="fa fa-bed"></i> 3 Alcobas
-                            </div>
-                            <div class="meta-bath-room">
-                                <i class="fa fa-bath"></i>2 Baños
-                            </div>
-                            <span class="clearfix"></span>
-                            <div class="rent-price pull-left">
-                                $300.000
-                            </div>
-                            <div class="share-meta dropup pull-right">
-                                <ul>
-                                    <li class="dropup">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                            aria-haspopup="true" aria-expanded="false"><i
-                                                class="fa fa-share-alt"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                         </div><!-- /.bottom-content -->
                     </div><!-- /.text-content -->
                 </div><!-- /.partments-content -->
             </div><!-- /.col-md-4 -->
 
-
-
-        </div><!-- /.container -->
-    </div><!-- /.Apartments-area-->
-
+            ";
+       }?>
+    </div><!-- /.container -->
+</div>
 
     <!-- ====== About Us Area ====== -->
     <div id="about" class="aboutus-area">

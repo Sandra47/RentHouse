@@ -86,35 +86,7 @@ class HouseController{
         $tabla="House";
         $sql=HouseModel::listarHouseModelo($tabla);
         return $sql;
-    //    // echo "<pre>"
-    //        // print_r($sql);
-    //    // echo "</pre>";
-
-      
-    //    foreach($sql as $datos => $value){
-    //     // echo "<tr>";
-    //     // echo "<td>". $value["id"]."</td>";
-    //     // echo "<td>". $value["name"]."</td>";
-    //     // echo "<td>". $value["email"]."</td>";
-    //     // echo "<td>". $value["password"]."</td>";
-    //     // echo "<td><button type='button' class='btn' idEditar=".$value["id"].">Editar</button> 
-    //     //      <button type='button' class='btn' idEliminar=".$value["id"]."> Eliminar</button></td>";
-    //     // echo "</tr>";
-    //        //otra manera
-    //        echo"
-           
-    //        <tr>
-    //           <td>{$value["id"]}</td>
-    //           <td>{$value["name"]}</td>
-    //           <td>{$value["email"]}</td>
-    //           <td>{$value["password"]}</td>
-    //           <td><button type='button' class='editar' idEditar='{$value["id"]}'>Editar</button> 
-    //           <br> <button type='button' class='borrar' idBorrar='{$value["id"]}'> Eliminar</button></td>
         
-    //        </tr>
-    //        ";
-    //    }
-       
     }
 
     // public static function eliminarUsuarioController($id){
