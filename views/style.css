@@ -3,7 +3,7 @@ Template Name: HouseRent
 Template URI: http://house-rent.htmlguru.net
 Author: HTMLguru
 Author URI: http://softhopper.net
-Description: It\' s a HTML5 House Rent Template. Which is a unique feature and user competitive feature.
+Description: It\' s a HTML5 House Rent Template Which is a unique feature and user competitive feature.
 Version: 1.0
 */
 
@@ -2640,7 +2640,7 @@ pagination
 }
 
 .header-top-content img {
-    width: 120px;
+    width: 80px;
     border-radius: 10px;
 }
 
@@ -3539,15 +3539,15 @@ Sign In/Sign Up Pop up
 }
 
 .cd-form label.cd-username {
-    background-image: url("assets/images/cd-icon-username.svg");
+    background-image: url("views/assets/images/cd-icon-username.svg");
 }
 
 .cd-form label.cd-email {
-    background-image: url("assets/images/cd-icon-email.svg");
+    background-image: url("views/assets/images/cd-icon-email.svg");
 }
 
 .cd-form label.cd-password {
-    background-image: url("assets/images/cd-icon-password.svg");
+    background-image: url("views/assets/images/cd-icon-password.svg");
 }
 
 .cd-form input {
@@ -3707,7 +3707,7 @@ Sign In/Sign Up Pop up
     height: 40px;
     right: 0;
     top: -40px;
-    background: url("assets/images/cd-icon-close.svg") no-repeat center center;
+    background: url("views/assets/images/cd-icon-close.svg") no-repeat center center;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -5616,17 +5616,16 @@ Sign In/Sign Up Pop up
     position: absolute;
     content: "";
     background-color: rgba(0, 0, 0, 0.45);
-    left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
 }
 
 .stat {
-    text-align: center;
+    text-align: justify;
 }
 
 .highlight {
+    display: grid;
     font-weight: bold;
     margin-bottom: 40px;
     font-size: 60px;
@@ -5634,6 +5633,7 @@ Sign In/Sign Up Pop up
     font-family: inherit;
     margin-top: 0;
     margin-bottom: 0;
+    text-justify: auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5672,7 +5672,7 @@ Sign In/Sign Up Pop up
 --------------------------------------------------------------*/
 
 .testimonial-area {
-    padding: 60px 0 75px;
+    padding: 30px 0 75px;
 }
 
 .testimonial-area .container {
@@ -5686,7 +5686,7 @@ Sign In/Sign Up Pop up
 .testimonial-area .testimonial-heading-content {
     text-align: center;
     margin-bottom: 90px;
-    position: relative;
+    /* position: relative; */
 }
 
 .testimonial-area .testimonial-heading-content h2.title {
@@ -6739,6 +6739,7 @@ Sign In/Sign Up Pop up
 .map-left-content iframe {
     display: block;
     width: 100%;
+    height: 320px;
     position: relative;
     /* IE needs a position other than static */
     pointer-events: none;
@@ -7891,10 +7892,9 @@ Sign In/Sign Up Pop up
     margin-bottom: 30px;
 }
 
-.contact-area.pd-zero .heading-content-two h2.title {
-    margin-top: 45px;
-}
+.contact-area.pd-zero .heading-content-two h2.title {}
 
+margin-top: 45px;
 @media only screen and (min-width: 1400px) {
     .contact-area.pd-zero .map-right-content {
         max-width: 85% !important;
@@ -8907,29 +8907,15 @@ object {
     background: #e0e0e0;
 }
 
-
-/* .content-select i {
-    position: absolute;
-    right: 20px;
-    top: calc(50% - 13px);
-    width: 16px;
-    height: 16px;
-    display: block;
-    border-left: 4px solid #c1a52a;
-    border-bottom: 4px solid #c18c2a;
-    transform: rotate(-45deg);
-    /* Giramos el cuadrado */
-
-transition: all 0.25s ease;
-
-}
-*/ .content-select:hover i {
+.content-select:hover i {
     margin-top: 3px;
 }
+
 .content-select {
     max-width: 250px;
     position: relative;
 }
+
 .content-select select {
     display: inline-block;
     width: 70px;
@@ -8950,29 +8936,14 @@ transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 
-/* .content-select i {
-    position: absolute;
-    right: 20px;
-    top: calc(50% - 13px);
-    width: 16px;
-    height: 16px;
-    display: block;
-    border-left: 4px solid #357c15;
-    border-bottom: 4px solid #357c15;
-    transform: rotate(-45deg);
-    /* Giramos el cuadrado */
-transition: all 0.25s ease;
-margin-right: 68%;
-
-}
-*/ .content-select:hover i {
+.content-select:hover i {
     margin-top: 3px;
 }
+
 .content-select select:hover {
-    background: rgb(238,
-    245,
-    241);
+    background: rgb(238, 245, 241);
 }
+
 .fieldset {
     margin-left: 20%;
 }
