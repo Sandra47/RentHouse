@@ -39,86 +39,7 @@
                                 <img src="views/assets/images/apartment/apartament-family/2house-family.jpg"
                                     alt="corousel">
                             </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family1.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family1.jpg"
-                                    alt="corousel">
-                            </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family2.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family2.jpg"
-                                    alt="corousel">
-                            </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family3.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family3.jpg"
-                                    alt="corousel">
-                            </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family4.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family4.jpg"
-                                    alt="corousel">
-                            </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family5.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family5.jpg"
-                                    alt="corousel">
-                            </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family6.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family6.jpg"
-                                    alt="corousel">
-                            </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family7.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family7.jpg"
-                                    alt="corousel">
-                            </a>
-                            <a class="item image-pop-up"
-                                href="views/assets/images/apartment/apartament-family/2house-family8.jpg">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family8.jpg"
-                                    alt="corousel">
-                            </a>
-
-                        </div>
-
-                        <div class="list-view owl-carousel">
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family1.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family2.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family3.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family4.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family5.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family6.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family7.jpg"
-                                    alt="corousel-image">
-                            </div>
-                            <div class="item">
-                                <img src="views/assets/images/apartment/apartament-family/2house-family8.jpg"
-                                    alt="corousel-image">
-                            </div>
+                            
 
                         </div>
                     </div> <!-- /.gallery-two -->
@@ -127,7 +48,7 @@
                 <div class="family-apartment-content mobile-extend">
                     <div class="tb">
                         <div class="tb-cell">
-                            <h3 class="apartment-title">Apartmento Familiar</h3>
+                            <h3 class="apartment-title">casa Familiar</h3>
                         </div><!-- /.tb-cell -->
                         <div class="tb-cell">
                             <p class="pull-right rent">Valor de la Renta: $2.000.000</p>
@@ -215,9 +136,7 @@
 
                     <div class="apartments-content seven post clerafix">
                         <div class="image-content">
-                            <a href="#"><img class="overlay-image"
-                                    src="views/assets/images/apartment/apartament-family/2house-family.jpg"
-                                    alt="about" /></a>
+                            
                         </div><!-- /.image-content -->
                     </div><!-- /.partments-content -->
                 </div><!-- /.apartment-sidebar -->
