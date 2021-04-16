@@ -1,4 +1,8 @@
 <!-- ======slider Area====== -->
+<?php
+$usuario = new HouseController();
+$descrip=$usuario->selectHouseController();
+?>
 <div class="slider-area">
     <div class="pogoSlider">
         <div class="pogoSlider-slide" data-transition="expandReveal" data-duration="1000"
@@ -54,6 +58,9 @@
 </div><!-- /.slider-area container-fluid -->
 
 <!-- ====== Apartments Area ====== -->
+<?php
+foreach($descrip as $datos => $value){
+}?>
 <div class="apartments-area bg-gray-color">
     <div class="container">
         <div class="row">
@@ -74,7 +81,7 @@
 
                     <div class="text-content">
                         <div class="top-content">
-                            <h3><a href="apartment-single.html">Apartamento Familiar</a></h3>
+                            <h3><a href="apartment-single.html"><?php echo $value["title"] ?></a></h3>
                             <span>
                                 <i class="fa fa-map-marker"></i>
                                 Armenía-Quindío
@@ -82,14 +89,14 @@
                         </div><!-- /.top-content -->
                         <div class="bottom-content clearfix">
                             <div class="meta-bed-room">
-                                <i class="fa fa-bed"></i> 3 Alcobas
+                                <i class="fa fa-bed"></i> <?php echo $value["numRooms"] ?> Alcobas
                             </div>
                             <div class="meta-bath-room">
-                                <i class="fa fa-bath"></i>2 Baños
+                                <i class="fa fa-bath"></i> <?php echo $value["numBath"] ?> Baños
                             </div>
                             <span class="clearfix"></span>
                             <div class="rent-price pull-left">
-                                $250.000
+                            <?php echo $value["priceAlquiler"] ?> 
                             </div>
                             <div class="share-meta dropup pull-right">
                                 <ul>
@@ -121,6 +128,9 @@
                     </div><!-- /.text-content -->
                 </div><!-- /.partments-content -->
             </div><!-- /.col-md-4 -->
+    
+        }
+       ?>
             <div class="col-md-4 col-sm-6 col-xs-6">
                 <div class="apartments-content">
                     <div class="image-content">

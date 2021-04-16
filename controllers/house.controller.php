@@ -82,9 +82,10 @@ class HouseController{
 
     
 
-    // public static function selectUserController(){
-    //     $tabla="usuario";
-    //     $sql=usuariosModel::listarUsuarioModelo($tabla);
+    public static function selectHouseController(){
+        $tabla="House";
+        $sql=HouseModel::listarHouseModelo($tabla);
+        return $sql;
     //    // echo "<pre>"
     //        // print_r($sql);
     //    // echo "</pre>";
@@ -114,7 +115,7 @@ class HouseController{
     //        ";
     //    }
        
-    // }
+    }
 
     // public static function eliminarUsuarioController($id){
     //     $tabla = "usuario";

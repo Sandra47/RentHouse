@@ -32,6 +32,14 @@ class HouseModel{
            return "error";
         }
    }
+
+   public static function listarHouseModelo($tabla){
+    $stmt=Conexion::conectar()->prepare("SELECT * FROM $tabla");
+    $stmt->execute();
+    return $stmt->fetchAll();
+
+  }
+
 }
 
 // <?php
