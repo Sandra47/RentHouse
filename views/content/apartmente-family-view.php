@@ -69,7 +69,7 @@ $casa = casaController::MostrarcasaControler();
                      <div class="price-details">
                         <h3>Detalles del Precio</h3>
                      <ul>
-                            <li><span>Valor de la Renta:</span><?php echo $value["priceAlquiler"]?> </li>
+                            <li><span>Valor de la Renta:</span> $ <?php echo $value["priceAlquiler"]?> </li>
                             <li><span>Servio de internet:</span> <?php echo $value["serviceInternet"]?> </li>
                             <li><span>Servios Adicionales:</span> <?php echo $value["aditionalService"]?></li>
 
