@@ -69,16 +69,17 @@ $descrip=$usuario->selectHouseController();
                 </div><!-- /.Apartments-heading-content -->
             </div>
         </div><!-- /.row -->
-        <?php
-
-      foreach($descrip as $datos => $value){
-        echo"  
-        <div class='row'>
+        <div class="row">
+        <?php      
+      
+        foreach($descrip as $datos => $value){
+            echo"  
+            
       
             <div class='col-md-4 col-sm-6 col-xs-6'>
                 <div class='apartments-content'>
                     <div class='image-content'>
-                        <a href='formulario'><img src='views/assets/images/apartment/apartamentos1.png'
+                        <a href='formulario'><img src='{$value["imageHouse"]}'
                                 alt='apartment' /></a>
                     </div><!-- /.image-content -->
 
@@ -95,7 +96,10 @@ $descrip=$usuario->selectHouseController();
                                 <i class='fa fa-bed'></i> {$value["numRooms"]} Alcobas
                             </div>
                             <div class='meta-bath-room'>
-                                <i class='fa fa-bath'></i> {$value["numBath"]}Baños
+                                <i class='fa fa-bath'></i> {$value["numBath"]} Baños
+                            </div>
+                            <div class='meta-garage-room'>                              
+                                <img src='views/assets/images/apartment/garaje.svg' class ='garage'alt='garage'/>  {$value["parking"]} garaje
                             </div>
                             <span class='clearfix'></span>
                             <div class='rent-price pull-left'>
@@ -106,9 +110,10 @@ $descrip=$usuario->selectHouseController();
                     </div><!-- /.text-content -->
                 </div><!-- /.partments-content -->
             </div><!-- /.col-md-4 -->
-
+      
             ";
        }?>
+        </div>
     </div><!-- /.container -->
 </div>
 
@@ -172,7 +177,7 @@ $descrip=$usuario->selectHouseController();
                             </div><!-- /.col-md-6 -->
                             <div class="col-md-6">
                                 <div class="image-content">
-                                    <img src="assets/images/apartment/apartamento2.jpeg" alt="about" />
+                                    <img src="views/assets/images/apartment/apartamento2.jpeg" alt="about" />
                                 </div><!-- /.text-content -->
                             </div><!-- /.col-md-6 -->
                         </div> <!-- /.home -->
