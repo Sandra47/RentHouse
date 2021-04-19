@@ -10,7 +10,7 @@ Class casaModel{
 	
 	static public function Mostrarcasamodel($tabla){
 
-		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+		$stmt = Conexionx::conectar()->prepare("SELECT * FROM $tabla");
 
 		$stmt -> execute();
 
