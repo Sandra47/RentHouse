@@ -79,7 +79,7 @@ $descrip=$usuario->selectHouseController();
             <div class='col-md-4 col-sm-6 col-xs-6'>
                 <div class='apartments-content'>
                     <div class='image-content'>
-                        <a href='formulario'><img src='{$value["imageHouse"]}'
+                        <a href='apartmente-family'><img src='{$value["imageHouse"]}'
                                 alt='apartment' /></a>
                     </div><!-- /.image-content -->
 

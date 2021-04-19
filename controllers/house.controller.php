@@ -88,6 +88,7 @@ class HouseController{
         return $sql;
         
     }
+   
 
     // public static function eliminarUsuarioController($id){
     //     $tabla = "usuario";

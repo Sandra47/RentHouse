@@ -1,6 +1,6 @@
 <?php
-
-$casa = casaController::MostrarcasaControler();
+$usuario= new HouseController ();
+$casa = $usuario->selectHouseController();
 // echo'<pre>',print_r($casa); echo'</pre>';
 
 ?>
@@ -39,15 +39,15 @@ $casa = casaController::MostrarcasaControler();
 
 
         <div class="row">
-            <?php foreach ($casa as $key => $value) : ?>
+            <?php foreach ($casa as $key => $value) ?>
 
 
                 <div class="col-md-8">
                     <div class="corousel-gallery-content">
                         <div class="gallery">
                             <div class="full-view owl-carousel">
-                                <a class="item image-pop-up" href="views/assets/images/apartment/apartament-family/2house-family.jpg">
-                                    <img src="views/assets/images/apartment/apartament-family/2house-family.jpg" alt="corousel">
+                                <a class="item image-pop-up" href='<?php echo $value["imageHouse"]?>'>
+                                    <img src='<?php echo $value["imageHouse"]?>'>
                                 </a>
 
 
@@ -73,7 +73,7 @@ $casa = casaController::MostrarcasaControler();
                         <ul>
                             <li><span>Valor de la Renta:</span> $ <?php echo $value["priceAlquiler"] ?> </li>
                             <li><span>Servio de internet:</span> <?php echo $value["serviceInternet"] ?> </li>
-                            <li><span>Servios Adicionales:</span> <?php echo $value["aditionalService"] ?></li>
+                            <li><span>Servios Adicionales:</span> <?php echo $value["aditionalServices"] ?></li>
 
                         </ul>
                     </div><!-- /.price -->
@@ -82,12 +82,12 @@ $casa = casaController::MostrarcasaControler();
                         <h3>Detalles de la propiedad</h3>
                         <ul>
                             <li><span>Dirrecion:</span> <?php echo $value["location"] ?> </li>
-                            <li><span>Descripcion :</span><?php echo $value["descripcion"] ?></li>
+                            <li><span>Descripcion :</span><?php echo $value["description"] ?></li>
                             <li><span>Numero de cuarto:</span><?php echo $value["numRooms"] ?></li>
                             <li><span>Numero de baño:</span> <?php echo $value["numBath"] ?> </li>
                             <li><span>Parqueadero:</span> <?php echo $value["parking"] ?></li>
                             <li><span>Capacidad:</span> <?php echo $value["capacity"] ?></li>
-                            <li><span>Fecha Inicial de Disponibilidad:</span> <?php echo $value["starDateAvail"] ?></li>
+                            <li><span>Fecha Inicial de Disponibilidad:</span> <?php echo $value["startDateAvail"] ?></li>
                             <li><span>Fecha Final de Disponibilidad:</span> <?php echo $value["endDateAvail"] ?> </li>
                         </ul>
                     </div>
@@ -115,7 +115,7 @@ $casa = casaController::MostrarcasaControler();
                             </div> <!-- .col-md-4 -->
                         </div>
                 </div> <!-- /.col-md-8 -->
-            <?php endforeach ?>
+          
             <div class="col-md-4">
                 <div class="apartment-sidebar">
                     <div class="widget_rental_search clerafix">
